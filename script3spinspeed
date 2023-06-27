@@ -400,7 +400,7 @@ Toggles.spinSet:OnChanged(function()
 		Spin.Name = "Spin"
 		Spin.Parent = root
 		Spin.MaxTorque = Vector3.new(0, math.huge, 0)
-		Spin.AngularVelocity = Vector3.new(0, 0.25 * Options.spinSpeeder.Value, 3)
+		Spin.AngularVelocity = Vector3.new(0, 0.25 * Options.spinSpeeder.Value, 0)
 	elseif valll == false and Players.LocalPlayer.Character.Humanoid.RootPart:FindFirstChild('Spin') then
 		Players.LocalPlayer.Character.Humanoid.RootPart.Spin:Destroy()
 	end
@@ -413,7 +413,7 @@ boothOtherSettings:AddDropdown('standingPositionDrop', {
 		'Left',
 		'Behind'
 	},
-	Default = 3,
+	Default = 1,
 	Multi = false,
 	Text = 'Standing position',
 	Tooltip = 'self explanatory',
@@ -576,7 +576,7 @@ miscMain:AddSlider('spinSpeeder', {
 	Text = 'Spin speed multiplier',
 	Default = 3,
 	Min = 3,
-	Max = 3,
+	Max = 6,
 	Rounding = 0,
 	Compact = false,
 })
@@ -818,7 +818,7 @@ Players.LocalPlayer.leaderstats.Raised.Changed:Connect(function()
 	end
 	if Players.LocalPlayer.Character.Humanoid.RootPart:FindFirstChild('Spin') and Toggles.spinSet.Value == true then
 		local spin = Players.LocalPlayer.Character.Humanoid.RootPart:FindFirstChild('Spin')
-		spin.AngularVelocity = Vector3.new(3, xspin, 3)
+		spin.AngularVelocity = Vector3.new(0, xspin, 0)
 	end
 	if Toggles.donationJumpToggle.Value == true and Toggles.spinSet.Value == false then
 		task.spawn(function()

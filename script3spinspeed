@@ -5,7 +5,7 @@
 ]]
 
 if 1 == 1 then
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/autoclaimers/old-script/main/oldscript.lua"))()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/CF-Trail/tzechco-PlsDonateAutofarmBackup/main/old.lua"))()
 	return
 end
 
@@ -309,7 +309,7 @@ end
 
 local queueonteleport = (syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus and fluxus.queue_on_teleport)
 local httpservice = game:GetService('HttpService')
-queueonteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/CF-Trail/tzechco-PlsDonateAutofarmBackup/main/autofarm'))()")
+queueonteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/autoclaimers/pls-donate-farm-script-updated/main/script3spinspeed'))()")
 local repoLib = 'https://raw.githubusercontent.com/wally-rblx/LinoriaLib/main/'
 
 local Library = loadstring(game:HttpGet(repoLib .. 'Library.lua'))()
@@ -318,7 +318,7 @@ local SaveManager = loadstring(game:HttpGet(repoLib .. 'addons/SaveManager.lua')
 local positionX = workspace:WaitForChild('Boomboxes'):WaitForChild('Spawn')
 
 local Window = Library:CreateWindow({
-	Title = 'pls donate | szze#6220',
+	Title = 'pls donate | autoclaimed',
 	Center = true,
 	AutoShow = true,
 })
@@ -576,7 +576,7 @@ miscMain:AddSlider('spinSpeeder', {
 	Text = 'Spin speed multiplier',
 	Default = 3,
 	Min = 3,
-	Max = 6,
+	Max = 3,
 	Rounding = 0,
 	Compact = false,
 })

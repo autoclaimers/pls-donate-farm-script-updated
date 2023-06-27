@@ -575,7 +575,7 @@ end
 miscMain:AddSlider('spinSpeeder', {
 	Text = 'Spin speed multiplier',
 	Default = 3,
-	Min = 1,
+	Min = 3,
 	Max = 3,
 	Rounding = 0,
 	Compact = false,

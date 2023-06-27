@@ -818,7 +818,7 @@ Players.LocalPlayer.leaderstats.Raised.Changed:Connect(function()
 	end
 	if Players.LocalPlayer.Character.Humanoid.RootPart:FindFirstChild('Spin') and Toggles.spinSet.Value == true then
 		local spin = Players.LocalPlayer.Character.Humanoid.RootPart:FindFirstChild('Spin')
-		spin.AngularVelocity = Vector3.new(0, xspin, 0)
+		spin.AngularVelocity = Vector3.new(3, xspin, 3)
 	end
 	if Toggles.donationJumpToggle.Value == true and Toggles.spinSet.Value == false then
 		task.spawn(function()
